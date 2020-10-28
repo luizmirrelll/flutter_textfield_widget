@@ -24,6 +24,24 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               TextField(
+                decoration: InputDecoration(
+                    fillColor: Colors.lightBlue[50],
+                    filled: true,
+                    icon: Icon(Icons.adb),
+                    suffix: Container(
+                      width: 5,
+                      height: 5,
+                      color: Colors.red,
+                    ),
+                    prefixIcon: Icon(Icons.person),
+                    prefixText: "name",
+                    prefixStyle: TextStyle(
+                        color: Colors.blue, fontWeight: FontWeight.w600),
+                    labelText: "nama lengkap",
+                    hintText: "nama lengkapnya loh",
+                    hintStyle: TextStyle(fontSize: 12),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10))),
                 // maxLength: 5,//hanya menulis 5 karakter
                 // obscureText: true,//utk password
                 onChanged: (value) {
